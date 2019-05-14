@@ -4,7 +4,7 @@ function bfs(list, v)  # in dfs queue is replaced with stack
   push!(q, v)
   used[v] = 1
   while(!isempty(q))
-    now = popfirst!(q)  # popfirst! - pop! to dfs
+    now = popfirst!(q)  # popfirst! -> pop! to dfs
     println(now)
     for u in list[now]
       if (used[u] == 0)
