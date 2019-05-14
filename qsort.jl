@@ -44,6 +44,7 @@ function approxMedian(arr, left, right)
     median5 = sort5(arr, i, subRight)
     @swap(arr[median5], arr[left + div(i - left, 5)])
   end
+  
   return approxMedian(arr, left, left + div(right - left, 5))
 end
 
